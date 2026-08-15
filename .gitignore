@@ -4,4 +4,4 @@
 # 2. Add exceptions using the exclamation mark
 !.gitignore
 !hypr/
-
+!hypr/**
