@@ -1,0 +1,50 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+$directory\
+$git_branch\
+$git_status\
+$python\
+$docker_context\
+$aws\
+$terraform\
+$character
+"""
+
+[directory]
+style = "bold cyan"
+truncation_length = 4
+truncate_to_repo = false
+
+[git_branch]
+symbol = " "
+style = "bold purple"
+format = "[$symbol$branch]($style) "
+
+[git_status]
+style = "bold red"
+format = '([$all_status$ahead_behind]($style) )'
+
+[python]
+symbol = " "
+style = "yellow"
+format = '[$symbol$version( \($virtualenv\))]($style) '
+
+[docker_context]
+symbol = " "
+style = "blue"
+format = '[$symbol$context]($style) '
+
+[aws]
+symbol = " "
+style = "yellow"
+format = '[$symbol$profile(\($region\))]($style) '
+
+[terraform]
+symbol = "󱁢 "
+style = "purple"
+format = '[$symbol$workspace]($style) '
+
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"

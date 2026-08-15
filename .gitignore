@@ -5,3 +5,5 @@
 !.gitignore
 !hypr/
 !hypr/**
+!starship.toml
+
