@@ -8,3 +8,5 @@
 !starship.toml
 !quickshell/
 !quickshell/**
+!nvim
+!nvim/**
