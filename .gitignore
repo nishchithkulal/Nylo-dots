@@ -6,4 +6,5 @@
 !hypr/
 !hypr/**
 !starship.toml
-
+!quickshell/
+!quickshell/**
