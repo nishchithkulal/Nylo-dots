@@ -1,0 +1,7 @@
+# 1. Ignore everything in this directory
+*
+
+# 2. Add exceptions using the exclamation mark
+!.gitignore
+!hypr/
+
