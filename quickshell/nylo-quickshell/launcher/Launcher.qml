@@ -5,8 +5,8 @@ PanelWindow {
 	color: "transparent"
 	anchors {
 		top: true
-    		left: true
-    		bottom: true
+    left: true
+    bottom: true
 		right: true
 	}
 	Rectangle{
@@ -24,8 +24,28 @@ PanelWindow {
 			Rectangle{
 				color:"red"
 				Layout.fillWidth:true
-				Layout.preferredHeight: 50
-			}
+        Layout.preferredHeight: 50
+        TextInput{
+          id: mainInput
+          anchors.fill: parent
+          anchors.leftMargin: 15
+          anchors.rightMargin: 15
+          verticalAlignment: TextInput.AlignVCenter
+          color: "white"
+          font.pixelSize:14
+          selectByMouse: true
+          focus:true
+          Text{
+            id: input
+            text: "App / Propram Name"
+            anchors.fill: parent
+            verticalAlignment: Text.AlignVCenter
+            font: parent.font
+            color: Qt.rgba(1,1,1,0.6)
+            visible: !mainInput.text
+          }
+        }
+      }
 			Rectangle{
 				color:"blue"
 				Layout.fillWidth: true
